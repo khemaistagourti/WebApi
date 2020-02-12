@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-WebApi-E5903B9C-AFC4-4FED-82CC-C5FC1B061EEC</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Contracts\ILeaveAllocationRepository.cs" />
+    <Compile Include="Contracts\ILeaveHistoryRepository.cs" />
+    <Compile Include="Contracts\ILeaveTypeRepository.cs" />
+    <Compile Include="Contracts\IRepositoryBase.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Data\ApplicationDbContext.cs" />
+    <Compile Include="Data\Migrations\00000000000000_CreateIdentitySchema.cs" />
+    <Compile Include="Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs" />
+    <Compile Include="Data\Migrations\20200212131614_mig1.cs" />
+    <Compile Include="Data\Migrations\20200212131614_mig1.designer.cs" />
+    <Compile Include="Data\Migrations\20200212133956_mig2.cs" />
+    <Compile Include="Data\Migrations\20200212133956_mig2.designer.cs" />
+    <Compile Include="Data\Migrations\ApplicationDbContextModelSnapshot.cs" />
+    <Compile Include="Mappings\Maps.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\ErrorViewModel.cs" />
+    <Compile Include="Models\LeaveAllocation.cs" />
+    <Compile Include="Models\LeaveHistory.cs" />
+    <Compile Include="Models\LeaveType.cs" />
+    <Compile Include="Models\VM\EmployeeVM.cs" />
+    <Compile Include="Models\VM\ErrorViewModel.cs" />
+    <Compile Include="Models\VM\LeaveAllocationVM.cs" />
+    <Compile Include="Models\VM\LeaveHistoryVM.cs" />
+    <Compile Include="Models\VM\LeaveTypeVM.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Repository\LeaveAllocationRepository.cs" />
+    <Compile Include="Repository\LeaveHistoryRepository.cs" />
+    <Compile Include="Repository\LeaveTypeRepository.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0" />
+  </ItemGroup>
+
+</Project>
